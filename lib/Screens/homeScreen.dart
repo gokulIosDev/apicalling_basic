@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (response.statusCode == 200) {
       Map<String, dynamic> reponseData = jsonDecode(response.body);
       print(reponseData);
-      String meaasge = reponseData["message"];
+      
       NewsModel newsModel = NewsModel.fromJson(reponseData);
       return newsModel;
     } else {
