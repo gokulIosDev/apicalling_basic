@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getNews(context);
+    getNews();
   }
   @override
   Widget build(BuildContext context) {
